@@ -1,0 +1,12 @@
+[Unit]
+Description=Q processor service unit file
+
+[Service]
+User=ec2-user
+WorkingDirectory=/home/ec2-user
+# must use absolute path in ExecStart:
+ExecStart=/usr/bin/python3 qprocessor.py __QUEUE__ /home/ec2-user/qmessages.txt
+
+[Install]
+WantedBy=multi-user.target
+
