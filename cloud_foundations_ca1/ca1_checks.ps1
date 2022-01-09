@@ -1,5 +1,5 @@
 # Cloud Foundations CA1 checks files
-# Peadar Grant
+# Conor Murphy
 
 # Zip file name
 $zipFileName = '.\cloud_foundations_ca1.zip'

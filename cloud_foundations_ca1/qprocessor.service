@@ -5,7 +5,7 @@ Description=Q processor service unit file
 User=ec2-user
 WorkingDirectory=/home/ec2-user
 # must use absolute path in ExecStart:
-ExecStart=/usr/bin/python3 qprocessor.py https://queue.amazonaws.com/975004806813/labq /home/ec2-user/qmessages.txt
+ExecStart=/usr/bin/python3 qprocessor.py https://queue.amazonaws.com/975004806813/caq /home/ec2-user/qmessages.txt
 
 [Install]
 WantedBy=multi-user.target

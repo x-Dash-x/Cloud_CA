@@ -17,7 +17,7 @@ cd /home/ec2-user
 chown -R ec2-user .aws 
 
 # Get the qprocessor.py file
-BUCKET=conor-cloudinit-lab
+BUCKET=conor-cloud-ca
 aws s3 cp s3://$BUCKET/qprocessor.py . 
 chown -R ec2-user qprocessor.py
 

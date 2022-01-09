@@ -2,6 +2,8 @@
 # Name: Conor Murphy
 # script to setup VPC
 
+Write-Host 'If you are having issues setting up the VPC, just reload the AWS EC2 website and copy the new Credentials from the AWS CLI and do the ./paste_credentials.ps1 and ./lab_checks.ps1 and re-run the ./system_setup.ps1 again'
+
 $Vpcs=(aws ec2 describe-vpcs --filter Name=tag:Name,Values=LAB_VPC | ConvertFrom-Json).Vpcs
 
 if ( $Vpcs.Count -ge 1 ) {
