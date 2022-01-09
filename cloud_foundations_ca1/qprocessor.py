@@ -31,7 +31,7 @@ while True:
     wait_time_seconds = 20
 
     if 'Messages' not in response:
-        print('no messages')
+        print('no messages hit Ctrl + Z to exit queue')
         continue
 
     # loop over all messages
